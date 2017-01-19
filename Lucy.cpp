@@ -1,11 +1,13 @@
 #include <iostream>                                 // Ein- und Ausgabebibliothek
 
 int main(){
-  int test = 0;                                     // Hauptfunktion
+  int test = 0;  
+  int test2 = 0;    
+  test2 = 2;                               // Hauptfunktion
   std::cout << "Hello World!" << '\n';
   std::cout << "This is a Snippet!" << '\n';             // Ausgabe
 
-  std::cout << "Type Exit to close..." << '\n';
+  std::cout << "Type Exit to close.." << '\n';
 
   std::cin >> test;
   while ((test =! "Exit") || (test =! "exit")) {
