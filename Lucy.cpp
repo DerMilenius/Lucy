@@ -1,8 +1,18 @@
-#include <iostream>                                     // Ein- und Ausgabebibliothek
+#include <iostream>                                 // Ein- und Ausgabebibliothek
 
 int main(){
   int test = 0;                                     // Hauptfunktion
-  std::cout << "Hallo, du schöne Welt!" << std::endl; // Ausgabe
+  std::cout << "Hello World!" << '\n';
+  std::cout << "This is a Snippet!" << '\n';             // Ausgabe
+
+  std::cout << "Type Exit to close..." << '\n';
+
   std::cin >> test;
-  return 0;                                           // Optionale Rückgabe an das Betriebssystem
+  while ((test =! "Exit") || (test =! "exit")) {
+    std::cin >> test;
+  }
+
+
+
+  return 0;                                         // Optionale Rückgabe an das Betriebssystem
 }
